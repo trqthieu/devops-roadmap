@@ -30,7 +30,7 @@
 |✅ **Ngày 9** | File System & Disk | `df`, `du`, `mount`, `umount`, `lsblk`, `fdisk` cơ bản, `/etc/fstab` | Kiểm tra disk usage, tìm file chiếm dung lượng |
 |✅ **Ngày 10** | Networking cơ bản Linux | `ip`, `ifconfig`, `ping`, `netstat`, `ss`, `curl`, `wget`, `traceroute` | Debug kết nối mạng, test endpoint API |
 |✅ **Ngày 11** | Package Management | `apt`/`apt-get`, `dpkg`, `snap`, cập nhật hệ thống, install/remove package | Cài LAMP stack thủ công |
-| **Ngày 12** | Bash Scripting cơ bản | Variables, if/else, for/while loop, functions, arguments `$1 $2`, exit code | Viết script backup file tự động |
+|✅ **Ngày 12** | Bash Scripting cơ bản | Variables, if/else, for/while loop, functions, arguments `$1 $2`, exit code | Viết script backup file tự động |
 | **Ngày 13** | Bash Scripting nâng cao | `cron`, `crontab -e`, scheduling, `systemd` service cơ bản, `journalctl` | Tạo cronjob dọn log cũ mỗi đêm |
 | **Ngày 14** | **Project cuối tuần** | Build script deploy app Node.js/Python thủ công: clone repo, install deps, restart service | Script production-ready với error handling |
 
