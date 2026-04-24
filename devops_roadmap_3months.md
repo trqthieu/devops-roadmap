@@ -31,8 +31,8 @@
 |✅ **Ngày 10** | Networking cơ bản Linux | `ip`, `ifconfig`, `ping`, `netstat`, `ss`, `curl`, `wget`, `traceroute` | Debug kết nối mạng, test endpoint API |
 |✅ **Ngày 11** | Package Management | `apt`/`apt-get`, `dpkg`, `snap`, cập nhật hệ thống, install/remove package | Cài LAMP stack thủ công |
 |✅ **Ngày 12** | Bash Scripting cơ bản | Variables, if/else, for/while loop, functions, arguments `$1 $2`, exit code | Viết script backup file tự động |
-| **Ngày 13** | Bash Scripting nâng cao | `cron`, `crontab -e`, scheduling, `systemd` service cơ bản, `journalctl` | Tạo cronjob dọn log cũ mỗi đêm |
-| **Ngày 14** | **Project cuối tuần** | Build script deploy app Node.js/Python thủ công: clone repo, install deps, restart service | Script production-ready với error handling |
+|✅ **Ngày 13** | Bash Scripting nâng cao | `cron`, `crontab -e`, scheduling, `systemd` service cơ bản, `journalctl` | Tạo cronjob dọn log cũ mỗi đêm |
+|✅ **Ngày 14** | **Project cuối tuần** | Build script deploy app Node.js/Python thủ công: clone repo, install deps, restart service | Script production-ready với error handling |
 
 ---
 
@@ -40,7 +40,7 @@
 
 | Ngày | Chủ đề | Nội dung chi tiết | Bài tập thực hành |
 |------|--------|-------------------|-------------------|
-| **Ngày 15** | SSH & Remote Access | `ssh-keygen`, `ssh-copy-id`, `~/.ssh/config`, port forwarding, `scp`, `rsync` | Setup SSH key-based auth, copy file lên server |
+|✅ **Ngày 15** | SSH & Remote Access | `ssh-keygen`, `ssh-copy-id`, `~/.ssh/config`, port forwarding, `scp`, `rsync` | Setup SSH key-based auth, copy file lên server |
 | **Ngày 16** | Firewall cơ bản | `ufw`, `iptables` cơ bản, mở/đóng port, `fail2ban` | Hardening server: chỉ cho phép port cần thiết |
 | **Ngày 17** | Environment Variables | `export`, `.env`, `.bashrc`, `.bash_profile`, `source`, `printenv` | Quản lý config theo môi trường dev/prod |
 | **Ngày 18** | Docker Introduction | Container vs VM, Docker architecture, `docker pull`, `docker run`, `docker ps` | Chạy container Nginx, Hello World |
