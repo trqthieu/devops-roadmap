@@ -41,12 +41,12 @@
 | Ngày | Chủ đề | Nội dung chi tiết | Bài tập thực hành |
 |------|--------|-------------------|-------------------|
 |✅ **Ngày 15** | SSH & Remote Access | `ssh-keygen`, `ssh-copy-id`, `~/.ssh/config`, port forwarding, `scp`, `rsync` | Setup SSH key-based auth, copy file lên server |
-| **Ngày 16** | Firewall cơ bản | `ufw`, `iptables` cơ bản, mở/đóng port, `fail2ban` | Hardening server: chỉ cho phép port cần thiết |
-| **Ngày 17** | Environment Variables | `export`, `.env`, `.bashrc`, `.bash_profile`, `source`, `printenv` | Quản lý config theo môi trường dev/prod |
-| **Ngày 18** | Docker Introduction | Container vs VM, Docker architecture, `docker pull`, `docker run`, `docker ps` | Chạy container Nginx, Hello World |
-| **Ngày 19** | Docker Images | `docker images`, `docker build`, `Dockerfile` cơ bản: `FROM`, `RUN`, `CMD`, `COPY` | Build image cho app Node.js đơn giản |
-| **Ngày 20** | Dockerfile nâng cao | `EXPOSE`, `ENV`, `ARG`, `WORKDIR`, `ENTRYPOINT`, multi-stage builds, `.dockerignore` | Build image production tối ưu cho Python Flask |
-| **Ngày 21** | **Thực hành Docker** | Ôn tập + Dockerize một app thực tế (React hoặc Node.js) | Image size phải < 200MB |
+|✅ **Ngày 16** | Firewall cơ bản | `ufw`, `iptables` cơ bản, mở/đóng port, `fail2ban` | Hardening server: chỉ cho phép port cần thiết |
+|✅ **Ngày 17** | Environment Variables | `export`, `.env`, `.bashrc`, `.bash_profile`, `source`, `printenv` | Quản lý config theo môi trường dev/prod |
+|✅ **Ngày 18** | Docker Introduction | Container vs VM, Docker architecture, `docker pull`, `docker run`, `docker ps` | Chạy container Nginx, Hello World |
+|✅ **Ngày 19** | Docker Images | `docker images`, `docker build`, `Dockerfile` cơ bản: `FROM`, `RUN`, `CMD`, `COPY` | Build image cho app Node.js đơn giản |
+|✅ **Ngày 20** | Dockerfile nâng cao | `EXPOSE`, `ENV`, `ARG`, `WORKDIR`, `ENTRYPOINT`, multi-stage builds, `.dockerignore` | Build image production tối ưu cho Python Flask |
+|✅ **Ngày 21** | **Thực hành Docker** | Ôn tập + Dockerize một app thực tế (React hoặc Node.js) | Image size phải < 200MB |
 
 ---
 
