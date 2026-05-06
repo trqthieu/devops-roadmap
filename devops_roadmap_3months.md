@@ -54,9 +54,9 @@
 
 | Ngày | Chủ đề | Nội dung chi tiết | Bài tập thực hành |
 |------|--------|-------------------|-------------------|
-| **Ngày 22** | Docker Volumes & Networks | `docker volume`, `docker network`, bridge/host/overlay network, mount bind | App container kết nối database container |
-| **Ngày 23** | Docker Compose cơ bản | `docker-compose.yml`, `services`, `version`, `up`, `down`, `logs`, `exec` | Compose app + database (PostgreSQL) |
-| **Ngày 24** | Docker Compose nâng cao | `depends_on`, `healthcheck`, `restart policy`, `environment`, `networks` | Compose full stack: frontend + backend + DB |
+|✅ **Ngày 22** | Docker Volumes & Networks | `docker volume`, `docker network`, bridge/host/overlay network, mount bind | App container kết nối database container |
+|✅ **Ngày 23** | Docker Compose cơ bản | `docker-compose.yml`, `services`, `version`, `up`, `down`, `logs`, `exec` | Compose app + database (PostgreSQL) |
+|✅**Ngày 24** | Docker Compose nâng cao | `depends_on`, `healthcheck`, `restart policy`, `environment`, `networks` | Compose full stack: frontend + backend + DB |
 | **Ngày 25** | Docker Registry | Docker Hub, push/pull image, `docker tag`, private registry, image versioning | Push image lên Docker Hub với tag version |
 | **Ngày 26** | Docker Resource & Security | CPU/memory limits, `docker stats`, non-root user, read-only filesystem | Hardening container production |
 | **Ngày 27** | Docker Troubleshooting | `docker logs`, `docker inspect`, `docker exec -it`, debug container crash | Debug app container không start được |
