@@ -14,16 +14,21 @@ This is a **Vietnamese-language DevOps learning repository** containing a struct
 roadmap/
 ├── devops_roadmap_3months.md    # Master 90-day curriculum (Vietnamese)
 ├── README.md                     # Minimal project description
+├── CLAUDE.md                     # This file - guidance for Claude Code
+├── GENERATE_LESSONS.md           # Instructions for generating lesson files
 └── dayX/                         # Daily learning modules (X = 1-90)
-    └── cheatsheet-dayX.md       # Command reference for that day
+    ├── cheatsheet-dayX.md        # Command reference (quick lookup)
+    └── lesson-dayX.md            # Conceptual explanation (deep learning)
 ```
 
 ### Day Folder Structure
 
-Each learning day follows this pattern:
-- **Folder naming:** `dayX` (e.g., `day2`, `day15`, `day27`)
-- **Cheatsheet naming:** `cheatsheet-dayX.md` inside each day folder
-- **Content format:** Concise command references with Vietnamese comments
+Each learning day has **two types of files**:
+
+**1. Cheatsheet (cheatsheet-dayX.md)**
+- **Purpose:** Quick command reference
+- **Format:** One-line command + Vietnamese comment
+- **Use case:** Fast lookup when working
 
 Example from day2:
 ```bash
@@ -31,6 +36,21 @@ pwd                     # đang ở đâu
 ls -la                  # xem file + thư mục + ẩn + chi tiết
 cd ~                    # về home
 ```
+
+**2. Lesson (lesson-dayX.md)**
+- **Purpose:** Conceptual understanding and context
+- **Format:** Detailed explanations with diagrams, workflows, troubleshooting
+- **Use case:** Deep learning and understanding "why"
+
+Example structure:
+- Mục tiêu ngày hôm nay
+- Tại sao topic này quan trọng?
+- Concepts với sơ đồ ASCII
+- Workflow thực tế
+- Troubleshooting
+- Tóm tắt
+
+**Pattern:** Cheatsheet = "HOW", Lesson = "WHY"
 
 ## 90-Day Curriculum Breakdown
 
@@ -52,16 +72,39 @@ cd ~                    # về home
 
 ## Working with This Repository
 
-### Adding a New Day
+### Generating Lesson Files
 
-When creating content for a new day:
+**For creating both cheatsheet and lesson files for multiple days at once**, see `GENERATE_LESSONS.md` for detailed instructions.
+
+**Quick command format:**
+```
+Tạo lesson files cho tuần <X>, từ ngày <Y> đến ngày <Z>
+```
+
+Example:
+```
+Tạo lesson files cho tuần 3, từ ngày 15 đến ngày 21
+```
+
+**What happens:**
+1. Kiểm tra từng ngày có cheatsheet chưa
+2. Nếu thiếu cheatsheet → tạo mới (tổng hợp commands của ngày đó)
+3. Nếu đã có cheatsheet → giữ nguyên, không thay đổi
+4. Tạo lesson files cho tất cả các ngày
+5. Báo cáo files nào tạo mới, files nào giữ nguyên
+
+### Adding a New Day (Manual)
+
+When creating content for a new day manually:
 
 1. **Check the roadmap:** Reference `devops_roadmap_3months.md` for the day's topic and learning objectives
 2. **Create day folder:** `mkdir dayX` (use the correct day number)
 3. **Create cheatsheet:** `touch dayX/cheatsheet-dayX.md`
-4. **Content format:**
+4. **Create lesson (optional):** `touch dayX/lesson-dayX.md`
+5. **Content format:**
    - Use Vietnamese for all explanations and comments
-   - Keep commands concise and practical
+   - Cheatsheet: Keep commands concise and practical
+   - Lesson: Explain concepts, workflows, and context
    - Include inline comments explaining each command's purpose
    - Focus on commands/concepts relevant to that day's topic
 
@@ -82,8 +125,16 @@ Current branch: `main`
 ### Cheatsheet Style
 - **Brevity:** One-line command + Vietnamese comment
 - **Practical focus:** Commands that would be used in real DevOps scenarios
-- **No theory:** Save detailed explanations for the main roadmap
+- **No theory:** Save detailed explanations for lesson files
 - **Progressive complexity:** Match the difficulty to the day number
+
+### Lesson File Style
+- **Conceptual focus:** Explain "why" and "how it works", not just "how to do"
+- **Structure:** Mục tiêu → Tại sao? → Khái niệm → Workflow → Troubleshooting → Tóm tắt
+- **Diagrams:** Use ASCII diagrams to visualize systems and workflows
+- **Real scenarios:** Include production use cases and debugging workflows
+- **No commands:** Focus on explanation (commands are in cheatsheet)
+- **Integration:** Reference previous lessons, build progressive understanding
 
 ### Vietnamese Language Conventions
 - Use informal but professional Vietnamese
@@ -101,5 +152,19 @@ This is a **learning documentation repository**, not a code project:
 
 The repository serves as:
 1. A structured 90-day learning path for Vietnamese DevOps learners
-2. A quick reference collection of commands organized by topic
-3. A personal learning journal tracking progress through checkmarks
+2. A quick reference collection of commands organized by topic (cheatsheets)
+3. A deep learning resource with conceptual explanations (lessons)
+4. A personal learning journal tracking progress through checkmarks
+
+## Progress Tracking
+
+**Completed:**
+- ✅ Week 1 (Days 1-7): Linux basics
+- ✅ Week 2 (Days 8-14): Linux advanced + bash scripting
+
+**To do:**
+- ⏳ Week 3 (Days 15-21): SSH, security, Docker intro
+- ⏳ Week 4 (Days 22-30): Docker Compose & management
+- ⏳ Weeks 5-12: CI/CD, Kubernetes, Networking
+
+Use `GENERATE_LESSONS.md` to create lessons for remaining weeks.
