@@ -239,3 +239,4 @@
 ---
 
 *Roadmap được thiết kế bởi Senior DevOps — Cập nhật 2025*
+ docker run -d --name postgres --network app-network -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=${DB_PASSWORD:-secret} -e POSTGRES_DB=todos -v pgdata:/var/lib/postgresql/data -v $(pwd)/database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro --restart unless-stopped postgres:16-alpine
