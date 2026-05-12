@@ -1,0 +1,31 @@
+name: Secret Test
+on:
+  workflow_dispatch:
+
+jobs:
+  test-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print public variable
+        run: echo "NODE_ENV= ${{ vars.NODE_ENV }}"
+      - name: Test database connection
+        env:
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: |
+          echo "Connecting to database host: $DB_HOST"
+
+          # KHÔNG echo password
+          if [ -n "$DB_PASSWORD" ]; then
+            echo "Database password exists"
+          else
+            echo "Database password missing"
+            exit 1
+          fi
+      - name: Test Stripe key masking
+        env:
+          STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+
+        run: |
+          echo "Testing secret masking..."
+          echo "$STRIPE_API_KEY"

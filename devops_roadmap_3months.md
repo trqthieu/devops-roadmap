@@ -62,7 +62,7 @@
 |✅ **Ngày 27** | Docker Troubleshooting | `docker logs`, `docker inspect`, `docker exec -it`, debug container crash | Debug app container không start được |
 |✅ **Ngày 28** | **Project Tháng 1** | Deploy full-stack app (React + Node.js + PostgreSQL + Redis) bằng Docker Compose | App chạy được, có healthcheck, auto-restart |
 |✅ **Ngày 29** | Review & Document | Viết README.md cho project, document Dockerfile và compose file | PR documentation đạt chuẩn |
-| **Ngày 30** | **Ôn tập & Test** | Kiểm tra lại toàn bộ kiến thức tháng 1, làm quiz/flashcard | Có thể setup từ đầu không cần Google |
+|✅ **Ngày 30** | **Ôn tập & Test** | Kiểm tra lại toàn bộ kiến thức tháng 1, làm quiz/flashcard | Có thể setup từ đầu không cần Google |
 
 ---
 
@@ -72,8 +72,8 @@
 
 | Ngày | Chủ đề | Nội dung chi tiết | Bài tập thực hành |
 |------|--------|-------------------|-------------------|
-| **Ngày 31** | Git workflow nâng cao | Git branching strategy: GitFlow, GitHub Flow, trunk-based development | Setup branch protection rules |
-| **Ngày 32** | GitHub PRs & Code Review | Pull Request, review checklist, merge strategies (squash/rebase/merge) | Tạo PR template cho team |
+|✅ **Ngày 31** | Git workflow nâng cao | Git branching strategy: GitFlow, GitHub Flow, trunk-based development | Setup branch protection rules |
+|✅ **Ngày 32** | GitHub PRs & Code Review | Pull Request, review checklist, merge strategies (squash/rebase/merge) | Tạo PR template cho team |
 | **Ngày 33** | GitHub Secrets & Environments | `Settings > Secrets`, environment variables trong repo, `github.env` | Store AWS credentials, DB password vào secrets |
 | **Ngày 34** | CI/CD là gì? | Khái niệm CI, CD, pipeline, artifact, trigger, runner, job, step | Vẽ sơ đồ pipeline cho dự án thực tế |
 | **Ngày 35** | GitHub Actions cơ bản | `.github/workflows/`, YAML syntax, `on`, `jobs`, `steps`, `uses`, `run` | Tạo workflow in ra Hello World khi push code |
