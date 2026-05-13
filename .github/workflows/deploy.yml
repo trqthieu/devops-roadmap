@@ -1,4 +1,4 @@
-name: Multi-Environemnt Deploy
+name: Multi-Environment Deploy
 on:
   push:
     branches: [develop, staging, main]
@@ -40,7 +40,6 @@ jobs:
           echo "✓ Staging deployment successful"
 
   deploy-prod:
-    needs: deploy-staging
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     environment: production
