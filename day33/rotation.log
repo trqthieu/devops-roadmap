@@ -1,0 +1,68 @@
+[0;32m========================================[0m
+[0;32mAWS Secrets Rotation - Wed May 13 15:39:25 +07 2026[0m
+[0;32mEnvironment: staging[0m
+[0;32m========================================[0m
+[1;33mStep 1: Backing up current credentials...[0m
+[0;32m✓ Backup completed: ./secrets-backup/[0m
+[1;33mStep 2: Generating new AWS credentials...[0m
+[0;32m✓ New credentials generated[0m
+Access Key: AKIAIOSFOD...
+[1;33mStep 3: Testing new credentials...[0m
+[0;32m✓ Credentials test PASSED[0m
+[1;33mStep 4: Updating GitHub secrets...[0m
+[0;32m✓ GitHub secrets updated for environment: staging[0m
+[1;33mStep 5: Verifying secret update...[0m
+[0;32m✓ AWS_ACCESS_KEY_ID verified[0m
+[0;32m✓ AWS_SECRET_ACCESS_KEY verified[0m
+
+[0;32m========================================[0m
+[0;32m✓ Rotation completed successfully![0m
+[0;32m========================================[0m
+Environment: staging
+Time: Wed May 13 15:39:31 +07 2026
+Duration: 6s
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+Next rotation: 
+
+[1;33mIMPORTANT: Revoke old AWS credentials manually[0m
+Old Access Key (first 10 chars): AKIAIOSFOD...
+[0;32m========================================[0m
+[0;32mAWS Secrets Rotation - Wed May 13 15:52:53 +07 2026[0m
+[0;32mEnvironment: development[0m
+[0;32m========================================[0m
+[0;31mError: Invalid environment 'development'[0m
+Usage: ./rotate-aws-secrets.sh <staging|production>
+[0;32m========================================[0m
+[0;32mAWS Secrets Rotation - Wed May 13 15:53:00 +07 2026[0m
+[0;32mEnvironment: production[0m
+[0;32m========================================[0m
+[1;33mStep 1: Backing up current credentials...[0m
+[0;32m✓ Backup completed: ./secrets-backup/[0m
+[1;33mStep 2: Generating new AWS credentials...[0m
+[0;32m✓ New credentials generated[0m
+Access Key: AKIAIOSFOD...
+[1;33mStep 3: Testing new credentials...[0m
+[0;32m✓ Credentials test PASSED[0m
+[1;33mStep 4: Updating GitHub secrets...[0m
+[0;32m✓ GitHub secrets updated for environment: production[0m
+[1;33mStep 5: Verifying secret update...[0m
+[0;32m✓ AWS_ACCESS_KEY_ID verified[0m
+[0;32m✓ AWS_SECRET_ACCESS_KEY verified[0m
+
+[0;32m========================================[0m
+[0;32m✓ Rotation completed successfully![0m
+[0;32m========================================[0m
+Environment: production
+Time: Wed May 13 15:53:05 +07 2026
+Duration: 5s
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+Next rotation: 
+
+[1;33mIMPORTANT: Revoke old AWS credentials manually[0m
+Old Access Key (first 10 chars): AKIAIOSFOD...
