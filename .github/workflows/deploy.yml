@@ -1,0 +1,58 @@
+name: Multi-Environemnt Deploy
+on:
+  push:
+    branches: [develop, staging, main]
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    environment: development
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Development Environment
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+          API_URL: ${{ vars.API_URL }}
+        run: |
+          echo "Deploying to Development Environment..."
+          echo "API URL: $API_URL"
+          echo "API Key configured: $([ ! -z "$API_KEY" ] && echo 'YES' || echo 'NO')"
+          # Mock deploy
+          echo "✓ Deployment successful"
+
+  deploy-staging:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/staging'
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Staging Environment
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+          API_URL: ${{ vars.API_URL }}
+        run: |
+          echo "Deploying to Staging Environment..."
+          echo "API URL: $API_URL"
+          echo "API Key configured: $([ ! -z "$API_KEY" ] && echo 'YES' || echo 'NO')"
+          # Mock deploy
+          echo "✓ Staging deployment successful"
+
+  deploy-prod:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Production Environment
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+          API_URL: ${{ vars.API_URL }}
+        run: |
+          echo "Deploying to Production Environment..."
+          echo "API URL: $API_URL"
+          echo "API Key configured: $([ ! -z "$API_KEY" ] && echo 'YES' || echo 'NO')"
+          # Mock deploy
+          echo "✓ Production deployment successful"
