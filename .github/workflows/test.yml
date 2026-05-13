@@ -1,31 +1,47 @@
-name: Secret Test
-on:
-  workflow_dispatch:
+name: Test Secrets
+
+on: [push]
 
 jobs:
-  test-secret:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Print public variable
-        run: echo "NODE_ENV= ${{ vars.NODE_ENV }}"
+      - name: Print public config
+        run: |
+          echo "Environment: ${{ vars.NODE_ENV }}"
+          # Output sẽ hiện: Environment: production
+
       - name: Test database connection
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: |
-          echo "Connecting to database host: $DB_HOST"
+          echo "Connecting to database at $DB_HOST"
+          # Output: Connecting to database at db.example.com
 
-          # KHÔNG echo password
-          if [ -n "$DB_PASSWORD" ]; then
-            echo "Database password exists"
+          echo "Testing connection..."
+          # ❌ ĐỪNG làm: echo "Password: $DB_PASSWORD"
+          # ✅ ĐÚNG: Không log password
+
+          # Mock connection test
+          if [ ! -z "$DB_PASSWORD" ]; then
+            echo "✓ Database connection successful"
           else
-            echo "Database password missing"
+            echo "✗ Database connection failed"
             exit 1
           fi
-      - name: Test Stripe key masking
-        env:
-          STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
 
+      - name: Test Stripe API
+        env:
+          STRIPE_KEY: ${{ secrets.STRIPE_API_KEY }}
         run: |
-          echo "Testing secret masking..."
-          echo "$STRIPE_API_KEY"
+          # Mock API call
+          echo "Testing Stripe API..."
+          # curl sẽ dùng $STRIPE_KEY nhưng KHÔNG log ra
+
+          if [ ! -z "$STRIPE_KEY" ]; then
+            echo "✓ Stripe API key configured"
+          else
+            echo "✗ Stripe API key missing"
+            exit 1
+          fi
