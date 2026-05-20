@@ -78,7 +78,7 @@
 |✅ **Ngày 34** | CI/CD là gì? | Khái niệm CI, CD, pipeline, artifact, trigger, runner, job, step | Vẽ sơ đồ pipeline cho dự án thực tế |
 |✅ **Ngày 35** | GitHub Actions cơ bản | `.github/workflows/`, YAML syntax, `on`, `jobs`, `steps`, `uses`, `run` | Tạo workflow in ra Hello World khi push code |
 |✅ **Ngày 36** | Triggers & Events | `push`, `pull_request`, `schedule`, `workflow_dispatch`, `on.branches` | Workflow chỉ chạy khi push lên `main` |
-| **Ngày 37** | **Thực hành** | Build workflow CI: checkout → install → lint → test | Workflow xanh/đỏ rõ ràng trên GitHub |
+|✅ **Ngày 37** | **Thực hành** | Build workflow CI: checkout → install → lint → test | Workflow xanh/đỏ rõ ràng trên GitHub |
 
 ---
 
@@ -86,9 +86,9 @@
 
 | Ngày | Chủ đề | Nội dung chi tiết | Bài tập thực hành |
 |------|--------|-------------------|-------------------|
-| **Ngày 38** | Build & Test tự động | `actions/setup-node`, `actions/setup-python`, cache dependencies | CI cho Node.js app: install + test + coverage |
-| **Ngày 39** | Docker trong CI | Build Docker image trong workflow, `docker/build-push-action`, layer caching | CI tự build và push image lên Docker Hub |
-| **Ngày 40** | Matrix Strategy | `strategy.matrix` để test nhiều version (Node 18, 20, 22) | Test app trên 3 version Node cùng lúc |
+|✅ **Ngày 38** | Build & Test tự động | `actions/setup-node`, `actions/setup-python`, cache dependencies | CI cho Node.js app: install + test + coverage |
+|✅ **Ngày 39** | Docker trong CI | Build Docker image trong workflow, `docker/build-push-action`, layer caching | CI tự build và push image lên Docker Hub |
+|✅ **Ngày 40** | Matrix Strategy | `strategy.matrix` để test nhiều version (Node 18, 20, 22) | Test app trên 3 version Node cùng lúc |
 | **Ngày 41** | Artifacts & Reports | `actions/upload-artifact`, `actions/download-artifact`, test reports, coverage badge | Upload test results, download và dùng ở job khác |
 | **Ngày 42** | Reusable Workflows | `workflow_call`, composite actions, `uses: ./.github/workflows/` | Tách CI thành reusable components |
 | **Ngày 43** | Security Scanning trong CI | `trivy` scan Docker image, `snyk`, SAST tools, dependency audit | CI block deploy nếu có critical vulnerability |
