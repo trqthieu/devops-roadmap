@@ -77,7 +77,7 @@
 |✅ **Ngày 33** | GitHub Secrets & Environments | `Settings > Secrets`, environment variables trong repo, `github.env` | Store AWS credentials, DB password vào secrets |
 |✅ **Ngày 34** | CI/CD là gì? | Khái niệm CI, CD, pipeline, artifact, trigger, runner, job, step | Vẽ sơ đồ pipeline cho dự án thực tế |
 |✅ **Ngày 35** | GitHub Actions cơ bản | `.github/workflows/`, YAML syntax, `on`, `jobs`, `steps`, `uses`, `run` | Tạo workflow in ra Hello World khi push code |
-| **Ngày 36** | Triggers & Events | `push`, `pull_request`, `schedule`, `workflow_dispatch`, `on.branches` | Workflow chỉ chạy khi push lên `main` |
+|✅ **Ngày 36** | Triggers & Events | `push`, `pull_request`, `schedule`, `workflow_dispatch`, `on.branches` | Workflow chỉ chạy khi push lên `main` |
 | **Ngày 37** | **Thực hành** | Build workflow CI: checkout → install → lint → test | Workflow xanh/đỏ rõ ràng trên GitHub |
 
 ---
