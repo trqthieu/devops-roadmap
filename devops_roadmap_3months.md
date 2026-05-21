@@ -91,7 +91,7 @@
 |✅ **Ngày 40** | Matrix Strategy | `strategy.matrix` để test nhiều version (Node 18, 20, 22) | Test app trên 3 version Node cùng lúc |
 |✅ **Ngày 41** | Artifacts & Reports | `actions/upload-artifact`, `actions/download-artifact`, test reports, coverage badge | Upload test results, download và dùng ở job khác |
 |✅ **Ngày 42** | Reusable Workflows | `workflow_call`, composite actions, `uses: ./.github/workflows/` | Tách CI thành reusable components |
-| **Ngày 43** | Security Scanning trong CI | `trivy` scan Docker image, `snyk`, SAST tools, dependency audit | CI block deploy nếu có critical vulnerability |
+|✅ **Ngày 43** | Security Scanning trong CI | `trivy` scan Docker image, `snyk`, SAST tools, dependency audit | CI block deploy nếu có critical vulnerability |
 | **Ngày 44** | **Project CI** | Full CI pipeline: lint → test → build docker → scan → push image | Pipeline chạy < 5 phút |
 
 ---
